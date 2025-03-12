@@ -1,0 +1,102 @@
+/* Reset da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background-color: #c0c9f8; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilizando a imagem */
+.image img {
+    border-radius: 10%; 
+    object-fit: cover; 
+    margin-top: 10px; /* Espaço entre o texto e a imagem */
+}
+
+/* Estilizando o cabeçalho */
+.header-container {
+    background-image: linear-gradient(to right, #5457DE, #8eb6ff );/*background-color: #fff;*/ 
+    padding: 20px;
+    border-radius: 10px; 
+    display: inline-block; 
+    align-items: center; /* Alinha os elementos no centro */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+
+/* Container principal para alinhar as seções lado a lado */
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos */
+    align-items: flex-start; /* Alinha no topo */
+    padding: 30px;
+    max-width: 1600px;
+    margin: 0;
+}
+
+/* Estilizando a seção "Sobre Mim" */
+.sobre-mim {
+    width: 50%; /* Ocupa 40% da tela */
+    background-color: #d5daf2;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+/* Estilizando a seção "Projetos" */
+.projetos {
+    width: 40%; /* Ocupa 55% da tela */
+}
+
+.projeto-card {
+    background-color: #d5daf2;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+}
+
+/* .projeto-card h4:hover{
+    color: #0e19de;
+    cursor: pointer; 
+ */
+
+
+/* Estilizando os textos */
+h1, h3 {
+    font-size: 30px;
+    color: #333;
+}
+
+h2 {
+    font-size: 18px;
+    color: #f8f8f8;
+}
+p{
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha os elementos em telas menores */
+        align-items: center;
+    }
+
+    .sobre-mim, .projetos {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
