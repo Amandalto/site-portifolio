@@ -1,32 +1,40 @@
+
+/* Variáveis globais */
+:root {
+    --primary-color: #a7b5f7;
+    --secondary-color: #c6cff8;
+    --font-family: 'Poppins', sans-serif ;
+}
+
 /* Reset da página */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: var(--font-family);
+
 }
 
-/* Estilizando o cabeçalho */
 header {
-    background-color: #c0c9f8; 
+    background-color: var(--primary-color); 
     padding: 20px 0;
     text-align: center;
 }
 
 /* Estilizando a imagem */
 .image img {
-    border-radius: 10%; 
-    object-fit: cover; 
-    margin-top: 10px; /* Espaço entre o texto e a imagem */
+    border-radius: 10%;
+    object-fit: cover;
+    margin-top: 10px;
 }
 
 /* Estilizando o cabeçalho */
 .header-container {
-    background-image: linear-gradient(to bottom, #5457DE, #8eb6ff );/*background-color: #fff;*/ 
+    background-image: linear-gradient(to right, #6466df, #8badec);
     padding: 20px;
-    border-radius: 10px; 
-    display: inline-block; 
-    align-items: center; /* Alinha os elementos no centro */
+    border-radius: 10px;
+    display: inline-block;
+    align-items: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     flex-direction: column;
 }
@@ -34,26 +42,29 @@ header {
 /* Container principal para alinhar as seções lado a lado */
 .container {
     display: flex;
-    justify-content: space-between; /* Distribui os elementos */
-    align-items: flex-start; /* Alinha no topo */
-    padding: 20px;
+    flex-wrap: wrap; /* Adicionando suporte melhor para telas pequenas */
+    justify-content: space-between;
+    align-items: flex-start;
     max-width: 1600px;
-    margin: 10px;
+    margin: 0 auto; /* Centraliza o container */
+
 }
 
 /* Estilizando a seção "Sobre Mim" */
 .sobre-mim {
-    width: 50%; /* Ocupa 40% da tela */
+    max-width: 50%;
     background-color: #d5daf2;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     text-align: justify;
+    margin: 22px;
 }
 
 /* Estilizando a seção "Projetos" */
 .projetos {
     width: 45%;
+
 }
 
 .projeto-card {
@@ -62,7 +73,6 @@ header {
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', sans-serif;
     font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -70,17 +80,17 @@ header {
 
 /* Estilizando a imagem dos ícones */
 .projeto-icon {
-    width: 30px; /* Define o tamanho da imagem */
+    width: 30px;
     height: 28px;
     margin-right: 12px;
-    vertical-align: middle; /* Alinha a imagem verticalmente com o texto */
+    vertical-align: middle;
     border-radius: 6px;
 }
 
 /* Estilizando o link dentro do título */
 .projeto-card h4 {
     display: flex;
-    align-items: center; /* Alinha o ícone com o texto */
+    align-items: center;
 }
 
 .projeto-card a {
@@ -98,7 +108,8 @@ header {
 
 
 /* Estilizando os textos */
-h1, h3 {
+h1,
+h3 {
     font-size: 30px;
     color: #2e2e2e;
 }
@@ -107,28 +118,85 @@ h2 {
     font-size: 18px;
     color: #f8f8f8;
 }
-h3{
+
+h3 {
     padding: 10px;
     align-items: flex-start;
-   
+
 }
-p, ul{
+
+p,
+ul {
     font-size: 18px;
-    font-family: 'Segoe UI', sans-serif;
     text-align: justify;
     margin: 18px;
 }
 
+footer{
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+.contato {
+    /* Estilização do Formulário */
+    background-color: #d5daf2;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 800px;
+    margin: 15px auto;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contato label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#enviar {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#enviar:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+
+}    
+
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .container {
-        flex-direction: column; /* Empilha os elementos em telas menores */
-        align-items: center;
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px; 
     }
 
-    .sobre-mim, .projetos {
-        width: 90%;
-        margin-bottom: 20px;
+    .sobre-mim,
+    .projetos {
+        width: 70%;
+        margin: 15px auto;
     }
 }

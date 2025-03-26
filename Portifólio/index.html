@@ -10,6 +10,7 @@
 
 <body>
     <header>
+        <!-- Cabeçalho -->
         <div class="header-container">
             <h1>Amanda Lopes Teixeira de Oliveira</h1>
             <h2>Estudante de Análise e Desenvolvimento de Sistemas</h2>
@@ -26,9 +27,11 @@
             <div>
                 <p>Olá, meu nome é Amanda e estou cursando Análise e Desenvolvimento de Sistemas. Sou apaixonada por
                     tecnologia e estou sempre buscando expandir meus conhecimentos e habilidades nessa área.
-                    Tenho experiências como auxiliar e assistente administrativa, esses papéis me proporcionaram uma base sólida
+                    Tenho experiências como auxiliar e assistente administrativa, esses papéis me proporcionaram uma
+                    base sólida
                     em organização, comunicação e gerenciamento de projetos.
-                    Durante esse período, desenvolvi habilidades valiosas em suporte ao cliente, elaboração de documentos e
+                    Durante esse período, desenvolvi habilidades valiosas em suporte ao cliente, elaboração de
+                    documentos e
                     execução de tarefas, que complementam minha formação na área da tecnologia.
                 </p>
                 <h3>Habilidades</h3>
@@ -37,34 +40,60 @@
                     <li> Programação: Python, Java, JavaScript (iniciante)</li>
                     <li> Conhecimento básico de SQL e GitHub</li>
                 </ul>
+                <h3>Educação</h3>
+                <p><b>Uninter - Centro Universitário Internacional</b><br>Cursando Análise e Dsenvolvimento de Sistemas
+                    (2023 - 2025)</p>
+                <p><b>Conclusão do Ensino Médio</b><br> E. E. Assis Chateaubriand (2018 - 2019)<br> Certificado de aluna
+                    destaque da instituição em 2018, por desempenho e compromisso.</p>
+                <p><b>Formação profissional em Auxiliar Administrativo (2020 - 2021)</b><br>Realizada pela Rede Cidadã
+                    em parceria com a empresa Cedro Têxtil.</p>
+                <p><b>Inglês Express | Escola de idiomas</b><br> Certificado de inglês B2 - Upper-Intermediate.</p>
             </div>
         </article>
 
-       <!-- Seção Projetos -->
-<section class="projetos">
-    <h3>Meus Projetos</h3>
-    <div class="projeto-card">
-        <h4>
-            <img src="Imagens/iconSnake.jpg" alt="Ícone Python" class="projeto-icon">
-            <a href="link-do-projeto-1.html">Projetos Python</a>
-        </h4>
-        <p>Exercícios práticos da linguagem.</p>
-    </div>
-    <div class="projeto-card">
-        <h4>
-            <img src="Imagens/iconCoffee.jpg" alt="Ícone Java" class="projeto-icon">
-            <a href="link-do-projeto-2.html">Projetos Java</a>
-        </h4>
-        <p>Criação de um cofre utilizando a liguagem Java orientada a objetos.</p>
-    </div>
-    <div class="projeto-card">
-        <h4>
-            <img src="Imagens/iconGame.jpg" alt="Ícone Game" class="projeto-icon">
-            <a href="link-do-projeto-3.html">Projeto Game Mountain Shooter</a>
-        </h4>
-        <p>Um projeto de um game desenvolvido com Pygame.</p>
-    </div>
-</section>
+        <!-- Seção Projetos -->
+        <section class="projetos">
+            <h3>Meus Projetos</h3>
+            <div class="projeto-card">
+                <h4>
+                    <img src="Imagens/iconSnake.jpg" alt="Ícone Python" class="projeto-icon">
+                    <a href="link-do-projeto-1.html" target="_blank">Projetos Python</a>
+                </h4>
+                <p>Exercícios práticos da linguagem.</p>
+            </div>
+            <div class="projeto-card">
+                <h4>
+                    <img src="Imagens/iconCoffee.jpg" alt="Ícone Java" class="projeto-icon">
+                    <a href="link-do-projeto-2.html" target="_blank">Projetos Java</a>
+                </h4>
+                <p>Criação de um cofre utilizando a liguagem Java orientada a objetos.</p>
+            </div>
+            <div class="projeto-card">
+                <h4>
+                    <img src="Imagens/iconGame.jpg" alt="Ícone Game" class="projeto-icon">
+                    <a href="link-do-projeto-3.html" target="_blank">Projeto Game Mountain Shooter</a>
+                </h4>
+                <p>Um projeto de um game desenvolvido com Pygame.</p>
+            </div>
+            <!-- Seção Contato -->
+            <section class="contato">
+                <h3>Entre em Contato</h3>
+                <form id="form-contato" aria-label="Formulário de Contato">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required aria-required="true">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required aria-required="true"></textarea>
+
+                    <button type="submit" id="enviar">ENVIAR</button>
+                </form>
+            </section>
+            <footer>
+                <h5>&copy Site Desenvolvido por Amanda Lopes Teixeira de Oliveira  &#128522</h5>
+            </footer>
     </main>
     <script src="interatividade.js"></script>
 </body>
